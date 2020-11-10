@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin:0;
+            box-sizing: border-box;
+        }
+
+        ul,ol,li{
+            list-style: none;
+        }
+        img{
+            max-width: 100%;
+        } 
+        .logo>img{
+            height: 20px;
+            /* background-color: #555; */
+            vertical-align: top;
+        }   
+
+        .logo{
+            border: 1px solid red;
+            margin-left: 10px;
+            display: flex;
+            
+        } 
+
+        .nav{
+            display: flex;
+            border: 1px solid black;
+        
+        }
+
+        .nav>li{
+            border: 1px solid red;
+            padding: 4px 0.5em;
+            font-size: 12px;
+        }
+
+        header{
+            border: 1px solid red;
+            display: flex;
+            justify-content: space-between;
+            background-color: #999;
+            color: white;
+            align-items: center;
+           
+        }
+
+        .content{
+            border: 1px solid back;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .content>aside{
+            background-color: #333333;
+            width: 100px;
+            
+        }
+        .content>main{
+            background-color: #999;
+            height: 100px;
+            flex-grow: 1;
+        }
+        .content>.ad{
+            background-color: #666;
+            width: 50px;
+            
+        }
+        .imageList{
+            outline: 1px solid red;
+            
+            min-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .inner{
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -12px;
+        }
+        .imageList>.inner>.image{
+            width: 191px;
+            height: 191px;
+            border: 1px solid black;
+            margin-right: 12px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="https://static.xiedaimala.com/xdml/cdn/assets/white-logo-1a762b425df663fbccee710fe08d66951cea2fbc0a0350f03446ab30462e739f.png" alt="">
+        </div>
+        <ul class="nav">
+            <li>首页</li>
+            <li>课程</li>
+            <li>优惠</li>
+            <li>关于</li>
+        </ul>
+    </header>
+    <div class="content">
+        <aside></aside>
+        <main></main>
+        <div class="ad"></div>
+    </div>
+
+    <div class="imageList">
+        <div class="inner">
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+        </div>
+        
+    </div>
+</body>
+</html>

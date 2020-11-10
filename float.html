@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin:0;
+            box-sizing: border-box;
+        }
+
+        ul,ol,li{
+            list-style: none;
+        }
+
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .nav{
+            border:1px solid red;
+            display: inline-block;
+            float: right;
+            margin-right: 20px;
+        }
+
+        .nav>li{
+            border: 1px solid black;
+            padding: 4px 0.5em;
+            float: left;
+            line-height: 22px;
+        }
+
+        .logo>img{
+            height: 30px;
+            background-color: #555;
+            vertical-align: top;
+        }   
+
+        .logo{
+            border: 1px solid red;
+            float: left;
+            margin-left: 10px;
+        } 
+
+        header{
+            border: 1px solid green;
+            background-color: #555555;
+            color: white;
+            margin-bottom: 10px;
+        }  
+
+        .content{
+            outline: 5px solid red;
+            width: 800px;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }  
+
+        aside{
+            width: 200px;
+            outline: 1px solid black;
+            height: 300px;
+            float: left;
+            background-color: #555;
+        }
+
+        main{
+            width: 500px;
+            outline: 1px solid green;
+            height: 300px;
+            float: left;
+            background-color: #999;
+        }
+
+        .ad{
+            width: 100px;
+            outline: 1px solid pink;
+            height: 300px;
+            float: left;
+            background-color: #333;
+        }
+
+        .image-list{
+            /* border: 1px solid black; */
+            width: 800px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .image-list>.x>div{
+            width: 191px;
+            height: 191px;
+            /* border:1px solid red; */
+            margin-right: 12px;
+            float: left;
+            background-color: #999999;
+            margin-bottom: 10px;
+        }
+
+        .x{
+            margin-right: -12px;
+            /* border: 1px solid green; */
+        }
+    </style>
+</head>
+<body>
+    <header class="clearfix">
+        <ul class="nav clearfix">
+            <li>首页</li>
+            <li>课程</li>
+            <li>优惠</li>
+            <li>关于</li>
+        </ul>
+
+        <div class="logo">
+            <img src="https://static.xiedaimala.com/xdml/cdn/assets/white-logo-1a762b425df663fbccee710fe08d66951cea2fbc0a0350f03446ab30462e739f.png" alt="">
+        </div>
+    </header>
+    <div class="content clearfix">
+        <aside></aside>
+        <main></main>
+        <div class="ad"></div>
+    </div>
+    <div class="image-list clearfix">
+        <div class="x clearfix">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        
+    </div>
+</body>
+</html>
